@@ -1,0 +1,57 @@
+.titre {
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    color: #fff;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/friendstalking.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: 745px;
+}
+
+.banner .banner-desc {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    color: #fff;
+}
+
+.banner .banner-p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.main {
+    background-color: #f5f7fa;
+    background-size: cover;
+    height: 740px;
+}
+
+.para {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}
+
+.footer-form {
+    background-color: #000000;
+    height: 100%;
+}
+
+.text-blanc {
+    color: #fff;
+}
+
+.para-cc {
+    font-size: 20px;
+}
