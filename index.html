@@ -85,7 +85,7 @@
                     <hr>
                 </div>
                 <div class="col-md-6 col-xl-6 col-xs-12">
-                    <form action="">
+                    <form id="form-enga">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre Nom">
                         </div>
@@ -98,7 +98,7 @@
                         <div class="mb-3">
                             <input type="number" class="form-control" id="telephone" name="telephone" placeholder="Votre Numéro de téléphone">
                         </div>
-                        <button type="submit" class="btn btn-primary">Confirmer votre engagement</button>
+                        <button type="submit" id="submit-form" class="btn btn-primary">Confirmer votre engagement</button>
                     </form>
                 </div>
             </div>
@@ -115,7 +115,26 @@
     </section>
 
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.serializeObject/2.0.3/jquery.serializeObject.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var $form = $('form#form-enga'),
+            url = 'https://script.google.com/macros/s/AKfycbywdSuSP1bENuiW_eL8WeTiVsNPZjGMhlVPlbHB5Jy17jaZPQ4iiRE6pSt7bmgeDvxQGQ/exec';
+
+        $('#submit-form').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).done(function() {
+
+            });
+        });
+    </script>
 </body>
 
 </html>
