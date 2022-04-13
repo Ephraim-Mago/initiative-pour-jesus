@@ -1,5 +1,5 @@
 var $form = $('form#form-enga'),
-    url = 'https://script.google.com/macros/s/AKfycbywdSuSP1bENuiW_eL8WeTiVsNPZjGMhlVPlbHB5Jy17jaZPQ4iiRE6pSt7bmgeDvxQGQ/exec';
+    url = 'https://script.google.com/macros/s/AKfycbz2HmO6cfzaNYJ_V0gZDQ6ejhu2lpPF-xpUSeoJqVw-/dev';
 
 $('#submit-form').on('click', function(e) {
     e.preventDefault();
